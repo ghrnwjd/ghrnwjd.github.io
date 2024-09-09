@@ -15,7 +15,7 @@ footer_text: >
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: 🎖️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://ghrnwjd.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -54,7 +54,7 @@ socials_in_search: true
 bib_search: true
 
 # Dimensions
-max_width: 930px
+max_width: 1080px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -87,7 +87,7 @@ kaggle_id: # your kaggle id
 keybase_username: # your keybase user name
 lastfm_id: # your lastfm id
 lattes_id: # your ID on Lattes (Brazilian Lattes CV)
-linkedin_username: 정호영-920933257 # your LinkedIn user name
+linkedin_username: 호영-정-920933257 # your LinkedIn user name
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 medium_username: # your Medium username
 orcid_id: # your ORCID ID
@@ -133,7 +133,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: dev # blog_name will be displayed in your blog page
+blog_name:  # blog_name will be displayed in your blog page
 blog_description: 기록일지
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
@@ -305,7 +305,7 @@ jekyll-archives:
     tag: "/blog/tag/:name/"
     category: "/blog/category/:name/"
 
-display_tags: ["백엔드", "스마트 컨트랙트", "클라우드", "ETC"] # these tags will be displayed on the front page of your blog
+display_tags: ["백엔드", "스마트 컨트랙트", "클라우드", "etc"] # these tags will be displayed on the front page of your blog
 # display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
