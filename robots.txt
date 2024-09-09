@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://ghrnwjd.github.io/sitemap.xml
