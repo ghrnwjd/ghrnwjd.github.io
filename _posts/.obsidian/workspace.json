@@ -118,7 +118,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Untitled.md"
+              }
             }
           }
         ]
@@ -138,8 +140,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "03c601ffcec6bba0",
+  "active": "3981c72dfb78e01b",
   "lastOpenFiles": [
+    "Untitled.md",
     "2024-09-09-solidity-basic.md",
     "2024-09-08-깃-블로그-적용.md",
     "2024-09-07-블로그-이전.md",

@@ -28,7 +28,7 @@ social: true # includes social icons at the bottom of the page
 
 ---
 
-### 🔥Stack
+### Tech Stack
 
 <!-- 스프링부트  -->
 <code><img style="color: white" width=25 src="https://simpleicons.org/icons/springboot.svg"> SpringBoot </code> &ensp;
@@ -37,3 +37,9 @@ social: true # includes social icons at the bottom of the page
  <!-- React  -->
 <code><img style="color: white" width=25 src="https://simpleicons.org/icons/react.svg"> React </code>&ensp;<!-- PostMan  -->
 <code><img style="color: white" width=25 src="https://simpleicons.org/icons/postman.svg"> Postman </code>
+
+---
+
+### CV
+
+**[Notion](https://ghrnwjd.notion.site/ea525ef0db754c6fb809d68b06f4dfed)** 에서 확인할 수 있습니다.
