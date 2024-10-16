@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2024-09-13-what-is-blockchain.md",
+                "file": "2024-10-17-Stream.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2024-09-13-what-is-blockchain.md",
+                "file": "2024-10-17-Stream.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2024-09-13-what-is-blockchain.md",
+                "file": "2024-10-17-Stream.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2024-09-13-what-is-blockchain.md"
+                "file": "2024-10-17-Stream.md"
               }
             }
           }
@@ -148,10 +148,12 @@
   },
   "active": "03c601ffcec6bba0",
   "lastOpenFiles": [
-    "2024-09-09-solidity-basic.md",
     "2024-09-13-what-is-blockchain.md",
-    "2024-09-08-깃-블로그-적용.md",
+    "2024-09-19-정보보안기사.md",
+    "2024-10-17-Stream.md",
     "2024-09-07-블로그-이전.md",
+    "2024-09-08-깃-블로그-적용.md",
+    "2024-09-09-solidity-basic.md",
     "2024-09-08-블로그 이전.md"
   ]
 }
