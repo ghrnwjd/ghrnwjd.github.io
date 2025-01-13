@@ -2,7 +2,7 @@
 layout: post
 title: 자바 로드맵
 tags:
-  - etc
+  - 프로그래밍
 ---
 
 ![java roadmap](https://roadmap.sh/roadmaps/java.png)
