@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>초대합니다.</title>
+
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔊 배경음 -->
+  <audio id="bgm" autoplay muted loop>
+    <source src="https://cdn.jsdelivr.net/gh/ghrnwjd/ghrnwjd.github.io/music mr.mp3" type="audio/mp3">
+  </audio>
+
+  <!-- 🖼️ 메인 이미지 (여기에 원하는 이미지 넣기) -->
+  <img src="https://github.com/ghrnwjd/ghrnwjd.github.io/blob/main/sites_google_1.jpg" id="mainImage">
+
+  <script>
+    // 첫 클릭 시 소리 켜기
+    document.addEventListener("click", () => {
+      const audio = document.getElementById("bgm");
+      audio.muted = false;
+      audio.play();
+    }, { once: true });
+  </script>
+
+</body>
+</html>
