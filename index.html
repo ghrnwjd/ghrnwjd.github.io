@@ -4,20 +4,64 @@
   <meta charset="UTF-8">
   <title>초대합니다.</title>
 
+  <!-- 모바일 화면 대응 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
+    /* 기본 레이아웃 */
     body {
       margin: 0;
+      padding: 20px;               /* 모바일 여백 */
       background-color: #000;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 200vh;
+      flex-direction: column;      /* 세로 정렬 */
+      align-items: center;         /* 가로 가운데 */
+      justify-content: flex-start;
+      min-height: 100vh;
+      box-sizing: border-box;
+      color: #fff;
+      font-family: sans-serif;
     }
 
-    img {
-      max-width: 100%;
+    /* 이미지 스타일 */
+    img, #map img {
+      max-width: 100%;             /* 화면 폭에 맞춰 줄어듦 */
       height: auto;
+      display: block;
       cursor: pointer;
+      margin-bottom: 20px;
+    }
+
+    /* 지도 컨테이너 */
+    #map {
+      width: 100%;
+      max-width: 504px;            /* 데스크톱 기준 최대 크기 */
+    }
+
+    /* 지도 밑 작은 안내 영역 */
+    #map .hide {
+      width: 100%;
+      max-width: 482px;
+      overflow: hidden;
+      padding: 7px 11px;
+      border: 1px solid rgba(0,0,0,.1);
+      border-radius: 0 0 2px 2px;
+      background-color: #f9f9f9;
+      color: #000;
+      font-size: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* 모바일에서 지도 전체 폭 사용 */
+    @media (max-width: 480px) {
+      #map {
+        max-width: 100%;
+      }
+      #map .hide {
+        max-width: 100%;
+      }
     }
   </style>
 </head>
@@ -28,16 +72,27 @@
     <source src="https://cdn.jsdelivr.net/gh/ghrnwjd/ghrnwjd.github.io/music mr.mp3" type="audio/mp3">
   </audio>
 
-  <!-- 🖼️ 메인 이미지 (여기에 원하는 이미지 넣기) -->
-  <img src="https://raw.githubusercontent.com/ghrnwjd/ghrnwjd.github.io/refs/heads/main/sites_google_1.jpg" id="mainImage">
- </br>
-  <div id="map>
-      <a href="https://map.kakao.com/?urlX=486785&urlY=1116781&urlLevel=3&map_type=TYPE_MAP&map_hybrid=false" target="_blank"><img width="504" height="310" src="https://staticmap.kakao.com/map/mapservice?FORMAT=PNG&SCALE=2.5&MX=486785&MY=1116780&S=0&IW=504&IH=310&LANG=0&COORDSTM=WCONGNAMUL&logo=kakao_logo" style="border:1px solid #ccc"></a><div class="hide" style="overflow:hidden;padding:7px 11px;border:1px solid #dfdfdf;border-color:rgba(0,0,0,.1);border-radius:0 0 2px 2px;background-color:#f9f9f9;width:482px;"><strong style="float: left;"><img src="//t1.kakaocdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵"></strong><div style="float: right;position:relative"><a style="font-size:12px;text-decoration:none;float:left;height:15px;padding-top:1px;line-height:15px;color:#000" target="_blank" href="https://map.kakao.com/?urlX=486785&urlY=1116781&urlLevel=3&map_type=TYPE_MAP&map_hybrid=false">지도 크게 보기</a></div></div>
+  <!-- 🖼️ 메인 이미지 -->
+  <img src="https://raw.githubusercontent.com/ghrnwjd/ghrnwjd.github.io/refs/heads/main/sites_google_1.jpg" id="mainImage" alt="초대 이미지">
+
+  <!-- 🗺️ 지도 -->
+  <div id="map">
+    <a href="https://map.kakao.com/?urlX=486785&urlY=1116781&urlLevel=3&map_type=TYPE_MAP&map_hybrid=false" target="_blank">
+      <img width="504" height="310" src="https://staticmap.kakao.com/map/mapservice?FORMAT=PNG&SCALE=2.5&MX=486785&MY=1116780&S=0&IW=504&IH=310&LANG=0&COORDSTM=WCONGNAMUL&logo=kakao_logo" style="border:1px solid #ccc" alt="지도">
+    </a>
+    <div class="hide">
+      <strong><img src="//t1.kakaocdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵"></strong>
+      <div>
+        <a style="text-decoration:none;color:#000" target="_blank" href="https://map.kakao.com/?urlX=486785&urlY=1116781&urlLevel=3&map_type=TYPE_MAP&map_hybrid=false">
+          지도 크게 보기
+        </a>
+      </div>
+    </div>
   </div>
 
+  <!-- 🎵 클릭 시 소리 켜기 -->
   <script>
-    // 첫 클릭 시 소리 켜기
-    document.addEventListener("click", () => {
+    document.getElementById("mainImage").addEventListener("click", () => {
       const audio = document.getElementById("bgm");
       audio.muted = false;
       audio.play();
